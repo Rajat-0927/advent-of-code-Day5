@@ -38,5 +38,5 @@ for cmd in lines:
         MOVE = ST[from_][:qty]
         ST[from_] = ST[from_][qty:]
         ST[to_] = (list(reversed(MOVE)) if do_rev else MOVE) + ST[to_]
-#print(''.join(s[0] for s in S1 if len(s)>0))
-print(''.join(s[0] for s in S2 if len(s)>0))
+print(''.join(s[0] for s in S1 if len(s)>0))
+# print(''.join(s[0] for s in S2 if len(s)>0))
