@@ -1,4 +1,4 @@
-#!/usr/bin/python3.8
+#!/usr/bin/env python3
 import sys
 from copy import deepcopy
 infile = sys.argv[1] if len(sys.argv)>1 else '5.in'
