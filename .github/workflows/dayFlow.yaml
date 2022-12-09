@@ -19,5 +19,5 @@ jobs:
       - name: run code 
         run: |
           mkdir bin
-          chmod +x day.py
+          chmod +x day5.py
           ./day5.py 
