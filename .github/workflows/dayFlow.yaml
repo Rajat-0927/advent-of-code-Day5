@@ -18,7 +18,7 @@ jobs:
           python-version: "3.8"
       - name: run code 
         run: |
-          echo {{ secrets.MY_JSON }} >> parameter.json
+          echo "{{ secrets.MY_JSON }}" >> parameter.json
           cat parameter.json
           mkdir bin
           chmod +x day5.py
