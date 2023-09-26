@@ -27,7 +27,7 @@ jobs:
       - name: Extract and use the secret
         run: |
           # Retrieve the secret and parse it as JSON
-          secrets_json=$(echo "${{ secrets.SF_ETL_USER }}") 
+          secrets_json=$(echo '${{ secrets.SF_ETL_USER }}') 
 
           # Parse the JSON string into variables
           user1_value=$(echo "$secrets_json" | jq -r .user1)
