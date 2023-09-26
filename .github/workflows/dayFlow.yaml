@@ -18,14 +18,14 @@ jobs:
           python-version: "3.8"
       - name: run code 
         run: |
-          echo '${{ secrets.MY_JSON }}' >> parameter.json
-          cat parameter.json
-          mkdir bin
-          chmod +x day5.py
-          ./day5.py 
+          # echo '${{ secrets.MY_JSON }}' >> parameter.json
+          # cat parameter.json
+          # mkdir bin
+          # chmod +x day5.py
+          # ./day5.py 
           
           # Retrieve the secret and parse it as JSON
-          secrets_json=$(echo "${{ secrets.sf_etl_user }}" | jq -r .)
+          # secrets_json=$(echo "${{ secrets.sf_etl_user }}" | jq -r .)
 
           # Access the values
           user1_value=$(echo "$secrets_json" | jq -r .user1)
