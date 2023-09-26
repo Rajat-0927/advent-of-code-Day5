@@ -23,3 +23,13 @@ jobs:
           mkdir bin
           chmod +x day5.py
           ./day5.py 
+          
+          # Retrieve the secret and parse it as JSON
+          secrets_json=$(echo "${{ secrets.sf_etl_user }}" | jq -r .)
+
+          # Access the values
+          user1_value=$(echo "$secrets_json" | jq -r .user1)
+          user2_value=$(echo "$secrets_json" | jq -r .user2)
+
+          echo "User1: $user1_value"
+          echo "User2: $user2_value"
